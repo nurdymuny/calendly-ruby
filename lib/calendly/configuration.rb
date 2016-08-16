@@ -5,5 +5,9 @@ module Calendly
 	  def self.initialize
       @token = nil
 	  end
+
+	  def self.test_token
+      "IOINHFDPPCOBKUHHAVZQT4LGTVELZBWU"
+	  end
   end
 end
