@@ -1,4 +1,4 @@
-# Calendly
+# Calendly Version 1.0.0
 
 Instalation
 --------------
