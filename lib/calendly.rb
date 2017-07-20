@@ -38,6 +38,16 @@ module Calendly
     data = res.body
     JSON.parse(data)
   end
+ 
+  def self.webhook_subscriptions
+  	checking_token
+    url = "#{CALENDLY_URL}hooks"
+
+		res = request(url, 'get')
+
+    data = res.body
+    JSON.parse(data)
+  end
 
   def self.delete_webhook(hook_id)
     checking_token
