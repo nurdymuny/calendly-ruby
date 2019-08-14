@@ -1,6 +1,7 @@
-class Calendly::ErrorMsg < StandardError
+# frozen_string_literal: true
 
-  def initialize(msg="", errors={})
+class Calendly::ErrorMsg < StandardError
+  def initialize(msg = '', errors = {})
     @errors = errors
     super(msg)
   end
